@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+.child-green{
+    background-color: green;
+}
+
+.child-green:hover{
+    background-color:black
+}
+   
+
+.child-gold{
+    background-color: gold;
+}
+.child-gold:hover{
+    background-color: goldenrod;
+}
+
+
+ .parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .demo-test-link{
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    
+ }
+ .demo-test-link:hover{
+    background-color: gold;
+    color: #222;
+ }
+
+ .demo-test-link:active{
+    background-color: rgba(255, 217, 0, 0.5);
+ }
+
+ .demo-test-link:focus{
+    background-color: orange;
+ }
+ 
+ a:visited{
+    color:  grey;
+ }
+ .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    font-size: 24px;
+    background-color: lightskyblue;
+    transition: font-size 0.4s ease  ;
+    background-color: 0.4s ease;
+    color: 0.4s ease;
+ }
+ .box:hover{
+    background-color: lightgreen;
+    font-size: 48px;
+    color: #fff;
+    
+ }
+</style>
+
+</head>
+
+<body>
+<div class="parent">
+<p class="child-green">Lorem ipsum dolor sit amet.</p>
+<p class="child-gold">Lorem ipsum dolor sit amet.</p>
+</div>
+
+
+
+
+<a class="demo-test-link" href="#">Demo test link</a>
+</body>
+
+<a href="https://mytube.uz">MyTube</a>
+
+
+
+<div class="box">Demo</div>
+
+</html>
+
