@@ -1,9 +1,27 @@
+*{
+    box-sizing: border-box;
+}
 
 *:focus{
     outline: 2px solid #ff7500;
 }
-
-
+/*CONTAINER*/
+.container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right:auto ;
+    margin-left:auto;
+    }
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family:"roboto", "Arial",sans-serif;
+    letter-spacing: 0.5px;
+}
 .site-header{
    border-top: 5px solid #ff7500;
    padding-top: 16px;
@@ -13,10 +31,12 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .logo-link{
     transition: opacity 0.4s ease;
-}
+    }
+    .logo-link img{
+display: block;
+    }
 .logo-link:hover{
     opacity: 0.8;
 }
@@ -79,12 +99,13 @@
 .hero{
     padding-top: 80px;
     padding-bottom: 80px;
-  
-    display: flex;
-   align-items: center;
-   justify-content: space-between;
     background-color: #252420;
     color: #fff;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .hero-content{
     width: 390px;
@@ -104,6 +125,7 @@
     border-radius: 8px;
     width: 510px;
     height: 510;
+    box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 .hero-heading{
     font-size: 40px;
@@ -152,10 +174,13 @@
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    margin-bottom: 32px;
     background-color: rgba(255, 117, 0, 0.2);
 
 }
 .feature-tile{
+    margin-top:0 ;
+   margin-bottom: 12px;
     font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.5px;
@@ -168,13 +193,19 @@
 }
 
 .promo{
+   padding-top: 120px;
+    padding-bottom: 160px;
+}
+.promo-inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 64px;
+    border-radius: 12px;
     background-color: #252420;
     color: #fff;
-    border-radius: 12px;
 }
+
  .promo-heading{
   margin-top: 0;
   margin-bottom:24px ;
@@ -271,6 +302,13 @@ color: #ff7500;
 }
 .site-footer-links:last-child{
     margin-right: 0;
+}
+.site-footer-links li{
+    margin-bottom: 16px;
+}
+.site-footer-links li:last-child{
+   margin-bottom:16px ;
+   margin-bottom: 0;
 }
 
 
